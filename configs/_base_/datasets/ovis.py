@@ -14,7 +14,7 @@ data = dict(
             query_path=feat_root + 'clip_text_ovis',
             use_cache=True,
             min_video_len=5,
-            fps=0.5,
+            fps=1,
             unit=2),
         loader=dict(batch_size=128, num_workers=4, pin_memory=True, shuffle=True)),
     val=dict(
@@ -23,6 +23,6 @@ data = dict(
         cache_path=data_root + 'clip_ovis',
         query_path=data_root + 'clip_text_ovis',
         use_cache=True,
-        fps=0.5,
+        fps=1,
         unit=2,
         loader=dict(batch_size=1, num_workers=4, pin_memory=True, shuffle=False)))
