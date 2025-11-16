@@ -16,7 +16,7 @@ data = dict(
             min_video_len=5,
             fps=1,
             unit=2),
-        loader=dict(batch_size=128, num_workers=4, pin_memory=True, shuffle=True)),
+        loader=dict(batch_size=32, num_workers=4, pin_memory=True, shuffle=True)),
     val=dict(
         type=data_type,
         label_path=data_root + 'mot17_val_release.jsonl',
