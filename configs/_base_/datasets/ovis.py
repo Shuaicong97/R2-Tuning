@@ -1,8 +1,8 @@
 _base_ = 'datasets'
 # dataset settings
 data_type = 'Grounding'
-data_root = '/home/atuin/v100dd/v100dd19/FlashVTG/internvideo2'
-feat_root = '/home/atuin/v100dd/v100dd19/FlashVTG_sf_clip/final_version_slowfast_clip'
+data_root = '/home/atuin/v100dd/v100dd19/FlashVTG/internvideo2/'
+feat_root = '/home/atuin/v100dd/v100dd19/FlashVTG_sf_clip/final_version_slowfast_clip/'
 data = dict(
     train=dict(
         type='RepeatDataset',
