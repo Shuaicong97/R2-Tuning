@@ -6,14 +6,14 @@ model = dict(
     init=False,
     dims=256,
     strides=(1, 2, 4, 8),
-    buffer_size=2048,
+    buffer_size=4096,
     max_num_moment=50,
     adapter_cfg=dict(
         type='R2Block',
         k=4,
         dropout=0.5,
         use_tef=True,
-        pos_cfg=dict(type='PositionalEncoding', normalize=True, max_len=2048),
+        pos_cfg=dict(type='PositionalEncoding', normalize=True, max_len=4096),
         tem_cfg=dict(
             type='TransformerDecoderLayer',
             heads=8,
