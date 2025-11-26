@@ -6,4 +6,5 @@
 #SBATCH --output=/home/atuin/v100dd/v100dd19/sbatch_r2/result-%x-%j.txt
 #SBATCH -C a100_80
 
-PYTHONPATH=$PYTHONPATH:. python tools/launch.py configs/qvhighlights/r2_tuning_mot20.py
+PYTHONPATH=$PYTHONPATH:. python tools/launch.py configs/qvhighlights/r2_tuning_mot20.py \
+--work_dir /home/atuin/v100dd/v100dd19/R2-Tuning/best_runtime/r2_tuning_mot20

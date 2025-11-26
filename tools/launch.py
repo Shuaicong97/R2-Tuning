@@ -35,7 +35,7 @@ def main():
             work_dir = nncore.join('work_dirs', nncore.pure_name(args.config))
             work_dir = nncore.mkdir(work_dir, modify_path=True)
         else:
-            work_dir = args.work_dir
+            work_dir = nncore.mkdir(args.work_dir, modify_path=True)
 
         time_stp = nncore.get_timestamp()
         log_file = nncore.join(work_dir, '{}.log'.format(time_stp))
